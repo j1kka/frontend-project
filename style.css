@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #BBDEFB; 
+    font-family: Arial, sans-serif;
+    color: #333; 
+}
+
+.calendar-container {
+    width: 320px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2196F3; 
+    margin-bottom: 15px;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-around;
+    color: #64B5F6; 
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.day {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.2s; 
+}
+
+.day:hover {
+    background-color: #E3F2FD; 
+    cursor: pointer;
+}
+
+.highlighted {
+    background-color: #FFCA28; 
+    font-weight: bold;
+}
+
+.marked {
+    position: relative;
+    color: #BA68C8; 
+}
+
+.marked::after {
+    content: "!";
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #FF7043; 
+    color: white;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #757575;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.add-button {
+    font-size: 22px;
+    background: #42A5F5; 
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover {
+    background: #1E88E5; /
+}
